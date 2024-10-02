@@ -1,0 +1,116 @@
+/* General Board Layout */
+.kanban-board {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
+  padding: 10px; /* Add some padding if needed */
+  /* Add a height to the board to manage the scrollbar visibility */
+  max-height: 600px; /* Set a max height based on your design */
+}
+
+.ticket-group {
+  display: inline-block; /* Make each group inline to allow scrolling */
+  width: 300px; /* Adjust width based on your design */
+  margin-right: 10px; /* Space between groups */
+}
+
+.priority-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This aligns icons properly */
+}
+
+.action-icon {
+  margin-left: 10px; /* Space between icons */
+  cursor: pointer; /* Make icons look clickable */
+}
+
+.status-name, .priority-name {
+  margin-left: 10px; /* Space between the icon and the name */
+}
+
+/* Optional: Add some styles for scrollbar */
+.kanban-board::-webkit-scrollbar {
+  height: 8px; /* Height of horizontal scrollbar */
+}
+
+.kanban-board::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the scrollbar thumb */
+}
+
+.kanban-board::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color on hover */
+}
+
+.ticket-group h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+/* Ticket Card Layout */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Icons before headings */
+.user-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.user-heading img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Scrollbar customization */
+.kanban-board::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.kanban-board::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Scrollbar color */
+  border-radius: 4px;
+}
+
+.kanban-board::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Responsive layout for the board */
+.kanban-board {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+.ticket-group {
+  width: 300px; /* Fixed width for each group */
+  margin: 10px; /* Space between groups */
+}
+.ticket-count {
+  color: gray;
+  font-weight: 200;
+  margin-left: 10px; /* Space between heading and count */
+}

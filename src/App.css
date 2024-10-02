@@ -1,0 +1,81 @@
+.app {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-bottom: 20px;
+}
+
+.display-container {
+  position: relative;
+  margin-right: 20px; 
+}
+
+.display-button {
+  padding: 10px 15px;
+  background-color: white; 
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+}
+
+.display-button img {
+  margin-right: 5px; 
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 0; 
+  top: 100%; 
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+}
+
+.grouping-option, .ordering-option {
+  margin-bottom: 10px; 
+}
+
+label {
+  display: flex;
+  align-items: center; 
+}
+
+label select {
+  margin-left: 10px; 
+}
+
+.display-icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+  vertical-align: middle; 
+}
+
+.down-icon {
+  width: 12px; 
+  height: 12px; 
+  margin-left: 5px; 
+  vertical-align: middle; 
+}
+
+.grouping-option, .ordering-option {
+  margin-bottom: 10px; 
+}
+
+label {
+  display: flex;
+  align-items: center; 
+  margin-right: 20px; 
+}
